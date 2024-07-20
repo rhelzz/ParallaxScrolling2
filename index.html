@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="home">
+        <img src="assets2/sky.png" alt="">
+        <img src="assets2/moon.png" alt="" id="moon">
+        <img src="assets2/water.png" alt="">
+        <img src="assets2/center-city.png" alt="">
+        <img src="assets2/right-city.png" alt="">
+        <img src="assets2/left-city.png" alt="">
+        <img src="assets2/train.png" alt="" id="train">
+        <img src="assets2/rail.png" alt="">
+        <h1 id="text">Parallax Website</h1>
+        <img src="assets2/hill-left-1.png" alt="">
+        <img src="assets2/hill-right-1.png" alt="">
+    </section>
+    <div class="sec">
+        <h2>Title - Lorem</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam animi beatae sit, vitae asperiores at obcaecati ad odio assumenda inventore, adipisci hic tempora culpa magnam amet cumque molestiae quibusdam nesciunt eaque vel quam. Nisi, exercitationem veritatis laboriosam veniam iure, quis voluptas voluptatibus, ducimus alias quidem facere pariatur? Tempora reiciendis veritatis dolores ab et unde ipsa, sapiente sequi dolore magni architecto quasi libero dolorum culpa iure ipsam soluta voluptatem fugit doloremque consectetur vero officia. Quod, quo.br <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum inventore iusto ratione, numquam libero illum deleniti at quis, recusandae saepe cum molestiae sed. Quidem velit saepe beatae, aspernatur sed id consectetur quia voluptatum ducimus ea dolore porro consequatur, omnis tempore impedit possimus explicabo cum est, corporis rerum odit aliquam laudantium? Illo nemo doloribus et ducimus inventore molestias deleniti expedita assumenda unde reprehenderit iure, fugit laudantium aliquam sed corrupti quia facere suscipit a quisquam veritatis? Provident.</p>
+    </div>
+
+    <section class="home" id="section2">
+        <img src="assets2/sky.png" alt="">
+        <img src="assets2/moon.png" alt="" id="moon2">
+        <img src="assets2/water.png" alt="">
+        <img src="assets2/center-city.png" alt="">
+        <img src="assets2/right-city.png" alt="">
+        <img src="assets2/left-city.png" alt="">
+        <img src="assets2/train.png" alt="" id="train2">
+        <img src="assets2/rail.png" alt="">
+        <h1 id="text2">Parallax Section 2</h1>
+        <img src="assets2/hill-left-1.png" alt="">
+        <img src="assets2/hill-right-1.png" alt="">
+    </section>
+    <div class="sec">
+        <h2>Title - Lorem</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam animi beatae sit, vitae asperiores at obcaecati ad odio assumenda inventore, adipisci hic tempora culpa magnam amet cumque molestiae quibusdam nesciunt eaque vel quam. Nisi, exercitationem veritatis laboriosam veniam iure, quis voluptas voluptatibus, ducimus alias quidem facere pariatur? Tempora reiciendis veritatis dolores ab et unde ipsa, sapiente sequi dolore magni architecto quasi libero dolorum culpa iure ipsam soluta voluptatem fugit doloremque consectetur vero officia. Quod, quo.br <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum inventore iusto ratione, numquam libero illum deleniti at quis, recusandae saepe cum molestiae sed. Quidem velit saepe beatae, aspernatur sed id consectetur quia voluptatum ducimus ea dolore porro consequatur, omnis tempore impedit possimus explicabo cum est, corporis rerum odit aliquam laudantium? Illo nemo doloribus et ducimus inventore molestias deleniti expedita assumenda unde reprehenderit iure, fugit laudantium aliquam sed corrupti quia facere suscipit a quisquam veritatis? Provident.</p>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to("#moon", {
+        scrollTrigger: {
+            scrub: 0.5
+        },
+        y: 100
+    });
+
+    gsap.to("#train", {
+        scrollTrigger: {
+            scrub: 0.5
+        },
+        x: 200
+    });
+
+    gsap.to("#text", {
+        scrollTrigger: {
+            scrub: 0.5
+        },
+        y: -325
+    });
+
+    gsap.to("#moon2", {
+        scrollTrigger: {
+            trigger: "#section2",
+            start: "top center",
+            scrub: 0.5
+        },
+        y: 100
+    });
+
+    gsap.to("#train2", {
+        scrollTrigger: {
+            trigger: "#section2",
+            start: "top center",
+            scrub: 0.5
+        },
+        x: 200
+    });
+
+    gsap.to("#text2", {
+        scrollTrigger: {
+            trigger: "#section2",
+            start: "top center",
+            scrub: 0.5
+        },
+        y: -325
+    });
+</script>
+</html>
